@@ -13,11 +13,11 @@ public class Main {
         SpringApplication.run(Main.class, args);
     }
 
-    @Bean
-    CommandLineRunner runner(DatabaseSeeder init) {
-        return args -> {
-            init.SeedAllTables();
-
-        };
-    }
+//    @Bean
+//    CommandLineRunner runner(DatabaseSeeder init) {
+//        return args -> {
+//            init.SeedAllTables();
+//
+//        };
+//    }
 }
