@@ -1,15 +1,12 @@
-package org.example.dto;
+package org.example.dto.post;
 
 import lombok.Data;
 import org.example.entities.CategoryEntity;
-import org.example.entities.PostTagEntity;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class PostItemDTO {
+public class PostEditDTO {
     private int id;
     private String title;
     private String shortDescription;
@@ -17,9 +14,6 @@ public class PostItemDTO {
     private String meta;
     private String urlSlug;
     private boolean published;
-    private String postedOn;
-    private String modified;
     private CategoryEntity category;
-    private List<PostTagEntity> postTags = new ArrayList<>();
-
+    private List<Integer> tagIds;
 }
